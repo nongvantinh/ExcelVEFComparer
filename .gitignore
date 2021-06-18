@@ -5,8 +5,8 @@ export.cfg
 export_presets.cfg
 
 [Bb]in/
-[Bb]build/
-[Bb]builds/
+[Bb]uild/
+[Bb]uilds/
 
 # Mono-specific ignores
 .mono/
