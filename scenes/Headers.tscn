@@ -1,0 +1,176 @@
+[gd_scene load_steps=8 format=2]
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.25098, 0.45098, 0.619608, 1 )
+
+[sub_resource type="Theme" id=11]
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.266667, 0.741176, 0.196078, 1 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://fonts/Helvetica/HelveticaNeue-Bold.otf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 34
+font_data = SubResource( 13 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.0980392, 0.164706, 0.337255, 1 )
+
+[sub_resource type="Theme" id=15]
+PanelContainer/styles/panel = SubResource( 9 )
+
+[node name="Headers" type="PanelContainer"]
+anchor_right = 1.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 0, 40 )
+custom_styles/panel = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 95.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Headers" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1910.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+alignment = 1
+
+[node name="Name" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_right = 165.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 165, 75 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 11 )
+custom_styles/panel = SubResource( 12 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/Name"]
+margin_top = 16.0
+margin_right = 165.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "Index"
+align = 1
+valign = 1
+
+[node name="TCV Ship Loaded" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 175.0
+margin_right = 455.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 277, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/TCV Ship Loaded"]
+margin_top = 16.0
+margin_right = 280.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "TCV Ship Loaded"
+align = 1
+valign = 1
+
+[node name="TCV Shore Delivered" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 465.0
+margin_right = 801.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 277, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/TCV Shore Delivered"]
+margin_top = 16.0
+margin_right = 336.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "TCV Shore Delivered"
+align = 1
+valign = 1
+
+[node name="Ship Shore Ratio" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 811.0
+margin_right = 1088.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 277, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/Ship Shore Ratio"]
+margin_top = 16.0
+margin_right = 277.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "Ship/Shore Ratio"
+align = 1
+valign = 1
+
+[node name="Qual Vol" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 1098.0
+margin_right = 1264.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 166, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/Qual Vol"]
+margin_top = 16.0
+margin_right = 166.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "Qual Vol."
+align = 1
+valign = 1
+
+[node name="TCV Ship Loaded2" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 1274.0
+margin_right = 1554.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 280, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/TCV Ship Loaded2"]
+margin_top = 16.0
+margin_right = 280.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "TCV Ship Loaded"
+align = 1
+valign = 1
+
+[node name="TCV Shore Delivered2" type="PanelContainer" parent="MarginContainer/Headers"]
+margin_left = 1564.0
+margin_right = 1900.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 336, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 15 )
+
+[node name="Text" type="Label" parent="MarginContainer/Headers/TCV Shore Delivered2"]
+margin_top = 16.0
+margin_right = 336.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 14 )
+text = "TCV Shore Delivered"
+align = 1
+valign = 1
